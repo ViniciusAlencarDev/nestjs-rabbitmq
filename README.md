@@ -71,3 +71,15 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](LICENSE).
+
+
+# RUN ON DOCKER
+```
+docker build --pull --rm -f "Dockerfile" -t nestjsrabbitmq:latest "." 
+&&
+docker run -it -p 3000:3000 nestjsrabbitmq
+
+or
+
+docker-compose -f "docker-compose.yaml" up -d --build 
+```
